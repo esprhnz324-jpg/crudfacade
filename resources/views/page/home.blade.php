@@ -136,18 +136,15 @@
         gap: 14px;
       ">
         <span style="font-size: 28px;">🕐</span>
+        @php
+            date_default_timezone_set('Asia/Manila');
+            @endphp
+
         <div>
-          <p style="
-            margin: 0;
-            font-size: 13px;
-            color: #8899cc;
-          ">Time</p>
-          <p style="
-            margin: 0;
-            font-size: 16px;
-            font-weight: 600;
-            color: #3852B4;
-          ">{{ date('h:i A') }}</p>
+            <p style="margin: 0; font-size: 13px; color: #8899cc;">Time</p>
+                <p style="margin: 0; font-size: 16px; font-weight: 600; color: #3852B4;">
+                    {{ date('h:i A') }}
+                </p>
         </div>
       </div>
 
